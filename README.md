@@ -1,20 +1,20 @@
-# WikiWonders Foreground Skin
+# WikiWonders Filament Skin
 
-A MediaWiki skin that focuses on putting your content in the foreground.
+A MediaWiki skin that focuses on putting your content.
 
-It uses the Zurb Foundation (http://foundation.zurb.com) CSS framework.
+It uses the Yahoo's Pure (http://purecss.io) CSS framework.
 
 ## Installation
 
 Clone this repository to your `skins` directory and create a symlink to the main skin file.
 
-    ln -s Foreground/foreground.php Foreground.php
+    ln -s Filament/filament.php Filament.php
 
 Then add the following line to your `LocalSettings.php` file.
 
-    require_once($IP.'/skins/Foreground/foreground.php');
+    require_once($IP.'/skins/Filament/filament.php');
 
-Now find the `$wgDefaultSkin` variable and set it to `Foreground`.
+Now find the `$wgDefaultSkin` variable and set it to `Filament`.
 
 ## License
 
