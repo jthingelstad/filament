@@ -30,12 +30,12 @@ $wgExtensionMessagesFiles['filament'] = __DIR__.'/filament.i18n.php';
 
 $wgResourceModules['skins.filament'] = array(
 	'styles'         => array(
-    	'filament/assets/stylesheets/pure.css',
-    	'filament/assets/stylesheets/filament.css',
-        'filament/assets/stylesheets/filament-print.css'
+    	'Filament/assets/stylesheets/pure.css',
+    	'Filament/assets/stylesheets/filament.css',
+        'Filament/assets/stylesheets/filament-print.css'
     ),
     'scripts'        => array(
-        'filament/assets/scripts/filament.js'
+        'Filament/assets/scripts/filament.js'
     ),
     'remoteBasePath' => &$GLOBALS['wgStylePath'],
     'localBasePath'  => &$GLOBALS['wgStyleDirectory']
