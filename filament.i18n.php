@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Internationalization file for skin Laravel.
+ * Internationalization file for Filament skin.
  *
  * @file
  * @ingroup Skins
@@ -13,6 +13,6 @@ $messages = array();
  * @author WikiWonders
  */
 $messages['en'] = array(
-	'skinname-wwfoundation' => 'wwfounadtion',
-	'wwfoundation-desc' => 'WikiWonders base skin.'
+	'skinname-filament' => 'Filament',
+	'Filament-desc' => 'MediaWiki Skin based on Pure CSS.'
 );

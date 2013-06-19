@@ -15,14 +15,14 @@ if( ! defined( 'MEDIAWIKI' ))
 }
 
 $wgExtensionCredits['skin'][] = array(
-    'path'			 => __FILE__,
-    'name'			 => 'filament',
-    'url'			 => 'http://wikiwonders.net/wiki/Filament',
-    'author'		 => 'WikiWonders',
-    'descriptionmsg' => 'A MediaWiki skin that focuses on your content.',
+    'path'			=> __FILE__,
+    'name'			=> 'Filament',
+    'url'			=> 'http://filament.wikiwonders.net/',
+    'author'		 	=> 'WikiWonders',
+    'descriptionmsg' 		=> 'A MediaWiki skin that focuses on your content.',
 );
 
-$wgValidSkinNames['filament'] = 'filament';
+$wgValidSkinNames['filament'] = 'Filament';
 
 $wgAutoloadClasses['Skinfilament'] = __DIR__.'/filament.skin.php';
 
@@ -30,10 +30,10 @@ $wgExtensionMessagesFiles['filament'] = __DIR__.'/filament.i18n.php';
 
 $wgResourceModules['skins.filament'] = array(
 	'styles'         => array(
-    	'Filament/assets/stylesheets/pure.css',
-    	'Filament/assets/stylesheets/filament.css',
-        'Filament/assets/stylesheets/filament-print.css'
-    ),
+    		'Filament/assets/stylesheets/pure.css',
+    		'Filament/assets/stylesheets/filament.css',
+        	'Filament/assets/stylesheets/filament-print.css'
+    	),
     'scripts'        => array(
         'Filament/assets/scripts/filament.js'
     ),
