@@ -22,10 +22,24 @@ body {
  * --------------------------
 */
 
+.pure-g-r {letter-spacing: 0;}
+
+table.wikitable > tr > th, table.wikitable > tr > td, table.wikitable > * > tr > th, table.wikitable > * > tr > td {
+    border: 1px solid white;
+    padding: 5px 8px;
+}
+
+table.wikitable {
+    margin-top: 0.25em;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: rgb(75, 75, 75);
+}
+
+h2 {
+    margin-bottom: 0.1em;
 }
 
 a {
@@ -94,6 +108,7 @@ dd {
      text-align: center;
      border-bottom: 1px solid #eee;
      background: #fff;
+     line-height: 110%;
  }
     .header h1 {
         font-size: 3em;
@@ -382,7 +397,6 @@ pre code {
 }
 
 pre, code {
-    font-family: Consolas, 'Liberation Mono', Courier, monospace;
     color: #333;
     background: rgb(250, 250, 250);
 }
@@ -511,5 +525,16 @@ div.mw-htmlform-field-HTMLCheckField div.mw-label { height:0; }
 
 /* UNTIL I CAN DETERMINE WHY toolboxend GENERATES AN EMPTY <li> IN THE MENU, I'M HIDING IT */
 #p-toolboxend { display:none;}
-y {background-color: green;}
+
+
+/* Jamie's Header Hider */
+body.page-Main_Page h1.firstHeading,
+body.page-Main_Page #siteSub,
+body.page-Extension_Main_Page h1.firstHeading,
+body.page-Extension_Main_Page #siteSub,
+body.page-Skin_Main_Page h1.firstHeading,
+body.page-Skin_Main_Page #siteSub,
+body.page-Farm_Main_Pageh1.firstHeading,
+body.page-Farm_Main_Page #siteSub {
+  display:none;
 }
