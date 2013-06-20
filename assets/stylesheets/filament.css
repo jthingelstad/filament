@@ -22,7 +22,6 @@ body {
  * --------------------------
 */
 
-.pure-g-r {letter-spacing: 0;}
 
 table.wikitable > tr > th, table.wikitable > tr > td, table.wikitable > * > tr > th, table.wikitable > * > tr > td {
     border: 1px solid white;
