@@ -108,7 +108,7 @@ dd {
      text-align: center;
      border-bottom: 1px solid #eee;
      background: #fff;
-     line-height: 110%;
+     line-height: normal;
  }
     .header h1 {
         font-size: 3em;
