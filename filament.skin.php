@@ -93,6 +93,7 @@ class FilamentTemplate extends BaseTemplate {
 	    	<div class="group"><?php $this->html('catlinks'); ?></div>
 	    	<?php $this->html('dataAfterContent'); ?>
 	 	</div>
+
 		<div class="legal pure-g-r">
 			<div class="pure-u-2-5">
 				<ul>
@@ -117,9 +118,10 @@ class FilamentTemplate extends BaseTemplate {
 		<div id="mw-js-message" style="display:none;"></div>
 
 		<?php $this->printTrail(); ?>
-
-		</body>
-		</html>
+	</div>
+</div>
+</body>
+</html>
 
 <?php
 		wfRestoreWarnings();
