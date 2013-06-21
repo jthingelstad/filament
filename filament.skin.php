@@ -56,11 +56,6 @@ class FilamentTemplate extends BaseTemplate {
 	    </ul>
 
 	      <?php if ($wgUser->isLoggedIn()): ?>
-	      <a href="#" class="menu-item-divided"><?php $this->msg('views') ?></a>
-	        <ul class="dropdown">
-	        <?php foreach( $this->data['content_actions'] as $key => $item ) { echo $this->makeListItem($key, $item); } ?>
-	        </ul>
-
 	      <a href="#" class="menu-item-divided">Personal</a>
 	        <ul class="dropdown">
 	        <?php foreach ( $this->getPersonalTools() as $key => $item ) { echo $this->makeListItem($key, $item); } ?>
@@ -85,6 +80,16 @@ class FilamentTemplate extends BaseTemplate {
 	  <?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice" class="row notice large-12 columns"><?php $this->html( 'sitenotice' ); ?></div><?php } ?>
 	  <?php if ( $this->data['newtalk'] ) { ?><div class="usermessage row notice large-12 columns"><?php $this->html( 'newtalk' ); ?></div><?php } ?>
 	  <div id="mw-js-message" style="display:none;"></div>
+
+    <?php if ($wgUser->isLoggedIn()): ?>
+      <div id="horizontal-menu" class="pure-menu pure-menu-horizontal pure-menu-notouch pure-menu-open"><ul id="std-menu-items"><li>
+      <a href="#" class="menu-item-divided"><i class="icon-cog"> Page Menu</i></a>
+        <ul id="page_menu" class="pure-menu-children">
+        <?php foreach( $this->data['content_actions'] as $key => $item ) { echo $this->makeListItem($key, $item); } ?>
+	      </ul>
+	     </li></ul></div>
+	   <?php endif; ?>
+
 	  <div class="header pure-u-1">
 	    <h1 class="pure-u-1"><?php $this->html('title') ?></h1>
 	    <h2 class="pure-u"><?php $this->html('subtitle') ?></h2>

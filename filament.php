@@ -31,6 +31,7 @@ $wgExtensionMessagesFiles['filament'] = __DIR__.'/filament.i18n.php';
 $wgResourceModules['skins.filament'] = array(
 	'styles'         => array(
     		'Filament/assets/stylesheets/pure.css',
+            'Filament/assets/stylesheets/font-awesome.css',
     		'Filament/assets/stylesheets/filament.css',
         	'Filament/assets/stylesheets/filament-print.css'
     	),
