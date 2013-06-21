@@ -3,7 +3,20 @@ jQuery(document).ready(function() {
   jQuery('input[type="submit"]').addClass('pure-button');
   jQuery('input[type="submit"]').addClass('notice');
 
-  jQuery('i.icon.cog').click(function(){
-    jQuery('ul#page_menu').css('visibility', 'visible').css('margin-top', '2.5em');
+  jQuery('a#page_action_trigger').click(function(){
+    if (jQuery('ul#page_action_menu').css('visibility')=='hidden'){
+      jQuery('ul#page_action_menu').css('visibility', 'visible');
+    } else {
+      jQuery('ul#page_action_menu').css('visibility', 'hidden');
+    }
   });
+
+  jQuery('a#menuLink').click(function(){
+    if (jQuery('div#menu').css('margin-left')=='-150px'){
+      jQuery('div#menu').css('margin-left', '0');
+    } else {
+      jQuery('div#menu').css('margin-left', '-150px');
+    }
+  });
+
 });

@@ -207,6 +207,12 @@ aside {
  * --------------------------
 */
 
+a#menuLink {
+    color: white;
+    letter-spacing: 0;
+    padding: 0.25em .5em;
+}
+
 #menu {
     margin-left: -150px; /* "#menu" width */
     width: 150px;
@@ -251,7 +257,8 @@ aside {
     background: #333;
 }
 
-ul#page_menu li {
+ul#page_action_menu {margin-top: 2.1em;}
+ul#page_action_menu li {
     background-color: white;
 }
 
@@ -291,6 +298,9 @@ ul#page_menu li {
 }
 
 
+#horizontal-menu {
+    text-align: right;
+}
 
 /* ---------------------
  * Smaller Module Styles

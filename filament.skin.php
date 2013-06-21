@@ -82,12 +82,16 @@ class FilamentTemplate extends BaseTemplate {
 	  <div id="mw-js-message" style="display:none;"></div>
 
     <?php if ($wgUser->isLoggedIn()): ?>
-      <div id="horizontal-menu" class="pure-menu pure-menu-horizontal pure-menu-notouch pure-menu-open"><ul id="std-menu-items"><li>
-      <a href="#" class="menu-item-divided"><i class="icon-cog"> Page Menu</i></a>
-        <ul id="page_menu" class="pure-menu-children">
-        <?php foreach( $this->data['content_actions'] as $key => $item ) { echo $this->makeListItem($key, $item); } ?>
-	      </ul>
-	     </li></ul></div>
+      <div id="horizontal-menu" class="pure-menu pure-menu-horizontal pure-menu-notouch pure-menu-open">
+      	<ul id="std-menu-items" class="pure-menu-children">
+      		<li class="pure-menu-item pure-menu-can-have-children pure-menu-has-children">
+      			<a href="#" id="page_action_trigger" class="pure-menu-label">Page Actions</a>
+        		<ul id="page_action_menu" class="pure-menu-children" role="menu">
+        			<?php foreach( $this->data['content_actions'] as $key => $item ) { echo $this->makeListItem($key, $item); } ?>
+	      		</ul>
+	     		</li>
+	     </ul>
+	  	</div>
 	   <?php endif; ?>
 
 	  <div class="header pure-u-1">
