@@ -36,6 +36,8 @@ $wgResourceModules['skins.filament'] = array(
         	'Filament/assets/stylesheets/filament-print.css'
     	),
     'scripts'        => array(
+        'Filament/assets/scripts/vendor/custom.modernizr.js',
+        'Filament/assets/scripts/vendor/fastclick.js',
         'Filament/assets/scripts/filament.js'
     ),
     'remoteBasePath' => &$GLOBALS['wgStylePath'],
