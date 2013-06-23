@@ -12,10 +12,12 @@ jQuery(document).ready(function() {
   });
 
   jQuery('a#menuLink').click(function(){
-    if (jQuery('div#menu').css('margin-left')=='-150px'){
-      jQuery('div#menu').css('margin-left', '0');
+    if (jQuery('div#menu').css('left')=='0px'){
+      jQuery('div#layout').addClass('active');
+      jQuery('div#menu').addClass('active');
     } else {
-      jQuery('div#menu').css('margin-left', '-150px');
+      jQuery('div#layout').removeClass('active');
+      jQuery('div#menu').removeClass('active');
     }
   });
 
