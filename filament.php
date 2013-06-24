@@ -1,7 +1,7 @@
 <?php
 
 /**
- * WikiWonders Filament Skin
+ * WikiWonders filament Skin
  *
  * @file
  * @ingroup Skins
@@ -30,15 +30,15 @@ $wgExtensionMessagesFiles['filament'] = __DIR__.'/filament.i18n.php';
 
 $wgResourceModules['skins.filament'] = array(
 	'styles'         => array(
-    		'Filament/assets/stylesheets/pure.css',
-            'Filament/assets/stylesheets/font-awesome.css',
-    		'Filament/assets/stylesheets/filament.css',
-        	'Filament/assets/stylesheets/filament-print.css'
+    		'filament/assets/stylesheets/pure.css',
+            'filament/assets/stylesheets/font-awesome.css',
+    		'filament/assets/stylesheets/filament.css',
+        	'filament/assets/stylesheets/filament-print.css'
     	),
     'scripts'        => array(
-        'Filament/assets/scripts/vendor/custom.modernizr.js',
-        'Filament/assets/scripts/vendor/fastclick.js',
-        'Filament/assets/scripts/filament.js'
+        'filament/assets/scripts/vendor/custom.modernizr.js',
+        'filament/assets/scripts/vendor/fastclick.js',
+        'filament/assets/scripts/filament.js'
     ),
     'remoteBasePath' => &$GLOBALS['wgStylePath'],
     'localBasePath'  => &$GLOBALS['wgStyleDirectory']
