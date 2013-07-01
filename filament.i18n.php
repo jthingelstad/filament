@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Internationalization file for Filament skin.
+ * Internationalization file for filament skin.
  *
  * @file
  * @ingroup Skins
  */
- 
+
 $messages = array();
 
 /** English
@@ -14,5 +14,5 @@ $messages = array();
  */
 $messages['en'] = array(
 	'skinname-filament' => 'Filament',
-	'Filament-desc' => 'MediaWiki Skin based on Pure CSS.'
+	'filament-desc' => 'MediaWiki Skin based on Pure CSS.'
 );

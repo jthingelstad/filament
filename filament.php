@@ -24,9 +24,9 @@ $wgExtensionCredits['skin'][] = array(
 
 $wgValidSkinNames['filament'] = 'Filament';
 
-$wgAutoloadClasses['Skinfilament'] = __DIR__.'/filament.skin.php';
+$wgAutoloadClasses['SkinFilament'] = __DIR__.'/Filament.skin.php';
 
-$wgExtensionMessagesFiles['filament'] = __DIR__.'/filament.i18n.php';
+$wgExtensionMessagesFiles['SkinFilament'] = __DIR__.'/Filament.i18n.php';
 
 $wgResourceModules['skins.filament'] = array(
 	'styles'         => array(

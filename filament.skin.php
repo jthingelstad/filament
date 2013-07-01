@@ -7,8 +7,8 @@
  * @ingroup Skins
  */
 
-class SkinFilament extends SkinTemplate {
-	public $skinname = 'filament', $stylename = 'filament', $template = 'FilamentTemplate', $useHeadElement = true;
+class Skinfilament extends SkinTemplate {
+	public $skinname = 'filament', $stylename = 'filament', $template = 'filamentTemplate', $useHeadElement = true;
 
 	public function setupSkinUserCss(OutputPage $out) {
 		parent::setupSkinUserCss($out);
@@ -25,7 +25,7 @@ class SkinFilament extends SkinTemplate {
 	}
 
 }
-class FilamentTemplate extends BaseTemplate {
+class filamentTemplate extends BaseTemplate {
 	public function execute() {
 		global $wgUser;
 		wfSuppressWarnings();
