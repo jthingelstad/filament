@@ -22,7 +22,7 @@ $wgExtensionCredits['skin'][] = array(
     'descriptionmsg' 		=> 'A MediaWiki skin that focuses on your content.',
 );
 
-$wgValidSkinNames['filament'] = 'filament';
+$wgValidSkinNames['filament'] = 'Filament';
 
 $wgAutoloadClasses['Skinfilament'] = __DIR__.'/filament.skin.php';
 
