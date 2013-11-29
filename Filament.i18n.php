@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Internationalization file for filament skin.
  *
@@ -14,5 +13,13 @@ $messages = array();
  */
 $messages['en'] = array(
 	'skinname-filament' => 'Filament',
-	'filament-desc' => 'MediaWiki Skin based on Pure CSS.'
+	'filament-desc' => 'Provides a skin based on "Pure CSS"'
+);
+
+/** German (Deutsch)
+* @author Kghbln
+*/
+$messages['de'] = array(
+        'skinname-foreground' => 'Foreground',
+        'foreground-desc' => 'Stellt eine auf „Pure CSS“ gestützte Benutzeroberfläche bereit'
 );

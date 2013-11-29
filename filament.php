@@ -1,10 +1,10 @@
 <?php
-
 /**
  * WikiWonders filament Skin
  *
  * @file
  * @ingroup Skins
+ * @package MediaWiki
  * @author WikiWonders <skins@wikiwonders.net>
  * @license 2-clause BSD
  */
@@ -19,7 +19,7 @@ $wgExtensionCredits['skin'][] = array(
     'name'			=> 'Filament',
     'url'			=> 'http://filament.wikiwonders.net/',
     'author'		 	=> 'WikiWonders',
-    'descriptionmsg' 		=> 'A MediaWiki skin that focuses on your content.',
+    'descriptionmsg' 		=> 'filament-desc',
 );
 
 $wgValidSkinNames['filament'] = 'Filament';
